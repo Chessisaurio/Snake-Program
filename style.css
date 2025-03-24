@@ -111,20 +111,49 @@
   .emptySquare
   {
 
-      background-color: aliceblue;
+      background-color: #EBD15A;
 
   }
 
   .snakeSquare
   {
 
-    background-color:   greenyellow;
+    background-color: #3B8C66;
 
   }
 
   .foodSquare
   {
 
-    background-color: brown;
+    background-color: #EB5E21;
+
+  }
+
+  .juego
+  {
+
+      width: 500px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+
+  html
+  {
+
+    background-color: #2C2D30;
+
+  }
+
+  #cabeza
+  {
+
+      color: aliceblue;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #1E1F22;
+      text-align: center;
 
   }

@@ -1,13 +1,13 @@
-//Elemntos HTML
+//---ELEMENTOS HTML---
 const board = document.getElementById(`board`)
 const scoreBoard = document.getElementById(`scoreBoard`)
 const startButton = document.getElementById(`start`)
 const gameOverSign = document.getElementById(`gameOver`)
 
-//Ajustes GameOver
+//---AJUSTES---
 const boardSize = 10
 
-const gameSpeed = 100
+const gameSpeed = 150
 
 const squareTypes =
 {
@@ -28,7 +28,7 @@ const directions =
 
 }
 
-//Variables
+//---VARIABLES---
 let snake
 let score
 let direction
@@ -36,6 +36,9 @@ let boardSquares
 let emptySquares
 let moveInterval
 
+//---FUNCIONES---
+
+//Funcion para trazar la serpiente.
 const drawSnake = () =>
 {
 
@@ -43,6 +46,7 @@ const drawSnake = () =>
 
 }
 
+//Funcion para trazar los diferentes tipos de bloques.
 const drawSquare = (square, type) =>
 {
 
@@ -69,6 +73,9 @@ const drawSquare = (square, type) =>
 
     }
 
+}
+
+//Función para añadir y hacer funcinal la comida.
 const addFood = () =>
 {
 
@@ -78,7 +85,8 @@ const addFood = () =>
 
 }
 
-moveSnake = () =>
+//Función que permite el movimiento de la serpiente
+const moveSnake = () =>
 {
 
     const newSquare = String(Number (snake[snake.length - 1]) + directions[direction])
@@ -114,6 +122,7 @@ moveSnake = () =>
 
 }
 
+//Función para el fin de juego.
 const gameOver = () =>
 {
 
@@ -123,6 +132,7 @@ const gameOver = () =>
 
 }
 
+//Función que permite acceder a direction.
 const setDirection = newDirection => 
 {
 
@@ -130,7 +140,8 @@ const setDirection = newDirection =>
 
 }
 
-directionEvent = key =>
+//Función que crea los eentos de dirección.
+const directionEvent = key =>
 {
 
     switch(key.code)
@@ -156,7 +167,8 @@ directionEvent = key =>
 
 }
 
-createRandomFood = () =>
+//Función qu epermite situar la comida en locolizaciones aleatorias.
+const createRandomFood = () =>
 {
 
     const randomEmptySquare = emptySquares[Math.floor(Math.random() * emptySquares.length)]
@@ -164,15 +176,15 @@ createRandomFood = () =>
 
 }
 
-updateScore = () =>
+//Función que permite actualizar el puntuaje.
+const updateScore = () =>
 {
 
     scoreBoard.innerText = score;
     
 }
 
-}
-
+//Función para crear la zona de juego.
 const createBoard = () => 
 {
 
@@ -195,6 +207,7 @@ const createBoard = () =>
 
 }
 
+//Función que configura el juego.
 const setGame = () =>
 {
 
@@ -209,6 +222,7 @@ const setGame = () =>
 
 }
 
+//Función que empieza el juego
 const startGame = () =>
 {
 
@@ -223,4 +237,5 @@ const startGame = () =>
 
 }
 
+//---START---
 startButton.addEventListener(`click`, startGame)
