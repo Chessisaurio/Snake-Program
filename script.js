@@ -23,7 +23,7 @@ const directions =
 
     ArrowUp: -10,
     ArrowDown: 10,
-    ArrowRght: 1,
+    ArrowRight: 1,
     ArrowLeft: -1,
 
 }
@@ -69,6 +69,108 @@ const drawSquare = (square, type) =>
 
     }
 
+const addFood = () =>
+{
+
+    score++
+    updateScore()
+    createRandomFood()
+
+}
+
+moveSnake = () =>
+{
+
+    const newSquare = String(Number (snake[snake.length - 1]) + directions[direction])
+    .padStart(2, `0`)
+    const [row, column] = newSquare.split(``)
+
+    if (newSquare < 0 || newSquare > boardSize * boardSize || (direction === `ArrowRight` && column == 0) || (direction === `ArrowLeft` && column == 9 || boardSquares[row][column] === squareTypes.snakeSquare) )
+    {
+
+        gameOver()
+
+    }
+    else
+    {
+
+        snake.push(newSquare)
+        if (boardSquares[row][column] === squareTypes.foodSquare)
+        {
+
+            addFood()
+
+        }
+        else
+        {
+
+            const emptySquare = snake.shift()
+            drawSquare (emptySquare, 'emptySquare')
+
+        }
+        drawSnake()
+
+    }
+
+}
+
+const gameOver = () =>
+{
+
+    gameOverSign.style.display = `block`
+    clearInterval(moveInterval)
+    startButton.disabled = false
+
+}
+
+const setDirection = newDirection => 
+{
+
+    direction = newDirection
+
+}
+
+directionEvent = key =>
+{
+
+    switch(key.code)
+    {
+
+        case `ArrowUp`:
+            direction != `ArrowDown` && setDirection(key.code)
+            break
+
+        case `ArrowDown`:
+            direction != `ArrowUp` && setDirection(key.code)
+            break
+
+        case `ArrowLeft`:
+            direction != `ArrowRight` && setDirection(key.code)
+            break
+    
+        case `ArrowRight`:
+            direction != `ArrowLeft` && setDirection(key.code)
+            break
+
+    }
+
+}
+
+createRandomFood = () =>
+{
+
+    const randomEmptySquare = emptySquares[Math.floor(Math.random() * emptySquares.length)]
+    drawSquare(randomEmptySquare, `foodSquare`)
+
+}
+
+updateScore = () =>
+{
+
+    scoreBoard.innerText = score;
+    
+}
+
 }
 
 const createBoard = () => 
@@ -112,8 +214,12 @@ const startGame = () =>
 
     setGame()
     gameOverSign.style.display = 'none'
-    startButton.disble = true
+    startButton.disabled = true
     drawSnake()
+    updateScore()
+    createRandomFood()
+    document.addEventListener(`keydown`, directionEvent)
+    moveInterval = setInterval (() => moveSnake(), gameSpeed)
 
 }
 
