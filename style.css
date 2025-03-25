@@ -96,9 +96,13 @@
   #start
   {
 
+    width: 100px;
       background-color: red;
       border: none;
       color: aliceblue;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
 
   }
 
@@ -189,5 +193,17 @@
       width: 500px;
       height: 500px;
       background-color: #1E1F22;
+
+  }
+
+  #ScoreB
+  {
+
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 100px;
+    left: 900px;
 
   }
