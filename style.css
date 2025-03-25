@@ -80,7 +80,7 @@
       height: 500PX;
       text-align: center;
       line-height: 420px;
-      top: 163px;
+      top: 171px;
       left: 706px;
 
   }
@@ -89,7 +89,8 @@
   {
 
       display: flex;
-      margin-top: 10px;
+      margin-top: 1
+      0px;
 
   }
 
@@ -97,15 +98,15 @@
   {
 
     width: 200px;
-      background-color: #73168C;
+      background-color: #1E1F22;
       border: none;
       color: #F2F2F2;
       border-radius: 3px;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: 250px;
       text-align: center;
       margin-top: 20px;
-      box-shadow: 0px 0px 0px 3px #1E1F22;
+      box-shadow: 0px 0px 0px 2px #F2F2F2;
       cursor: pointer;
       
 
@@ -116,7 +117,7 @@
     width: 195PX;
     height: 40PX;
     font-size: 24px;
-    background-color: #9F2CBF;
+    background-color: #2C2D30;
 
   }
 
@@ -125,7 +126,7 @@
 
     width: 180px;
     height: 35px;
-    background-color: #C04BF2;
+    background-color: #474849;
     font-size: 20px;
     cursor: pointer;
 
@@ -199,7 +200,7 @@
       text-align: center;
       margin-top: -20px;
       line-height: 75px;
-      box-shadow: 0px 3px 0px 0px #72168cb6;
+      box-shadow: 0px 2px 3px 0px #08678C;
 
   }
 
@@ -236,7 +237,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 900px;
     background-color: #1E1F22;
     border-radius: 10%;
@@ -247,9 +248,8 @@
   {
 
     position: absolute;
-    bottom: 863px;
+    bottom: 860px;
     left: 120px;
-    text-shadow: 5px 3px 0px #73168C;
     cursor: pointer;
 
   }
@@ -259,7 +259,7 @@
 
     position: absolute;
     left: 845px;
-    bottom: 863px;
+    bottom: 860px;
 
   }
 
@@ -279,7 +279,7 @@
 
     position: absolute;
     width: 100px;
-    bottom: 872px;
+    bottom: 868px;
     left: 20px;
 
   }
@@ -341,3 +341,48 @@
     bottom: -10px;
 
   }
+
+  .menu li
+  {
+
+    display: none;
+
+  }
+
+  .menu:hover li
+  {
+
+    display: block;
+
+  }
+
+  table
+  {
+    width: 200px;
+    background-color: #1e1f22cc;
+    border-radius: 5px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    
+
+  }
+
+table th
+{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-bottom: 1px solid #F2F2F2;
+  border: 1px solid #F2F2F2;
+
+}
+
+table th:hover
+{
+
+  background-color: #2C2D30cc;
+  cursor: pointer;
+
+}
