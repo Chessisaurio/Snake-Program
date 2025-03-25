@@ -75,12 +75,12 @@
       display: none;
       position: absolute;
       font-size: xx-large;
-      background-color: #343435ad;
+      background-color: #1e1f22b2;
       width: 500PX;
       height: 500PX;
       text-align: center;
-      line-height: 450px;
-      top: 176px;
+      line-height: 420px;
+      top: 163px;
       left: 706px;
 
   }
@@ -99,8 +99,8 @@
     width: 200px;
       background-color: #73168C;
       border: none;
-      color: aliceblue;
-      border-radius: 10px;
+      color: #F2F2F2;
+      border-radius: 3px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -180,14 +180,14 @@
   {
 
     background-color: #2C2D30;
-    color: aliceblue;
+    color: #F2F2F2;
 
   }
 
   #cabeza
   {
 
-      color: aliceblue;
+      color: #F2F2F2;
       width: 1908px;
       height: 75px;
       margin-left: -6px;
@@ -196,9 +196,11 @@
       text-align: center;
       margin-top: -20px;
       line-height: 75px;
+      box-shadow: 0px 3px 0px 0px #72168cb6;
 
   }
 
+  
   footer
   {
 
@@ -210,7 +212,7 @@
       right: 0px;
       text-align: center;
       line-height: 25px;
-      color: aliceblue;
+      color: #F2F2F2;
 
   }
 
@@ -231,9 +233,48 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 900px;
     background-color: #1E1F22;
     border-radius: 10%;
+
+  }
+
+  #studio
+  {
+
+    position: absolute;
+    bottom: 863px;
+    left: 120px;
+    text-shadow: 5px 3px 0px #73168C;
+
+  }
+
+  #Example
+  {
+
+    position: absolute;
+    left: 845px;
+    bottom: 863px;
+
+  }
+
+  #img1
+  {
+
+    position: absolute;
+    width: 40px;
+    right: 30px;
+    top: 20px;
+
+  }
+
+  #moth
+  {
+
+    position: absolute;
+    width: 100px;
+    bottom: 872px;
+    left: 20px;
 
   }
