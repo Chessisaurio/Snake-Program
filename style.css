@@ -73,26 +73,21 @@
   {
 
       display: none;
-      position: absolute;
       font-size: xx-large;
+      position: absolute;
       background-color: #1e1f22b2;
       width: 500PX;
       height: 500PX;
       text-align: center;
       line-height: 420px;
-      top: 171px;
-      left: 706px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -20px;
+
 
   }
 
-  .boardInfo
-  {
 
-      display: flex;
-      margin-top: 1
-      0px;
-
-  }
 
   #start
   {
@@ -100,12 +95,13 @@
     width: 200px;
       background-color: #1E1F22;
       border: none;
+      position: absolute;
       color: #F2F2F2;
       border-radius: 3px;
-      margin-left: auto;
+      margin-left: -230px;
       margin-right: 250px;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 500px;
       box-shadow: 0px 0px 0px 2px #F2F2F2;
       cursor: pointer;
       
@@ -208,12 +204,12 @@
   footer
   {
 
-      width: 1950px;
+      width: 1924px;
       height: 50px;
       background-color: #1E1F22;
       position: absolute;
-      top: 900px;
-      right: 0px;
+      margin-top: 718px;
+      margin-left: -20px;
       text-align: center;
       line-height: 25px;
       color: #F2F2F2;
@@ -236,9 +232,7 @@
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    top: 110px;
-    left: 900px;
+    margin-top: -540px;
     background-color: #1E1F22;
     border-radius: 10%;
 
@@ -247,9 +241,8 @@
   #studio
   {
 
-    position: absolute;
-    bottom: 860px;
-    left: 120px;
+    margin-top: -118px;
+    margin-left: -1525px;
     cursor: pointer;
 
   }
@@ -257,30 +250,28 @@
   #Example
   {
 
-    position: absolute;
-    left: 845px;
-    bottom: 860px;
+    margin-top: -95px;
+    margin-left: auto;
+    margin-right: auto;
 
   }
 
   #img1
   {
 
-    position: absolute;
     width: 40px;
-    right: 30px;
-    top: 20px;
+    margin-top: -500px;
+    margin-bottom: 90px;
+    margin-right: -1750px;
     cursor: pointer;
 
   }
 
   #moth
   {
-
-    position: absolute;
     width: 100px;
-    bottom: 868px;
-    left: 20px;
+    margin-left: -1780px;
+    margin-top: -5px;
 
   }
 
@@ -361,9 +352,9 @@
     width: 200px;
     background-color: #1e1f22cc;
     border-radius: 5px;
-    position: absolute;
-    right: 60px;
-    top: 30px;
+    margin-top: -140px;
+    margin-right: 2010px;
+    margin-left: 1560px;
     
 
   }
