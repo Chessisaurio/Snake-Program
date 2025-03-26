@@ -258,12 +258,12 @@
 
   #img1
   {
-
+    
     width: 40px;
-    margin-top: -500px;
-    margin-bottom: 90px;
-    margin-right: -1750px;
+    position: relative;
+    margin-left: 0;
     cursor: pointer;
+    right: 30px;
 
   }
 
@@ -337,6 +337,10 @@
   {
 
     display: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 1720px;
+    margin-top: -165px;
 
   }
 
@@ -350,11 +354,14 @@
   table
   {
     width: 200px;
+    position: relative;
     background-color: #1e1f22cc;
     border-radius: 5px;
     margin-top: -140px;
-    margin-right: 2010px;
-    margin-left: 1560px;
+    margin-right: 0px;
+    margin-left: 0px;
+    left: -1975px;
+    top: 115px;
     
 
   }
@@ -375,5 +382,16 @@ table th:hover
 
   background-color: #2C2D30cc;
   cursor: pointer;
+
+}
+
+.menu
+{
+  
+  width: 20px;
+  height: 60px;
+  position: relative;
+  right: -1800px;
+  bottom: 90px;
 
 }
